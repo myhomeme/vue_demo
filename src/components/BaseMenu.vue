@@ -16,14 +16,27 @@
     <h3>
       <router-link to="/BaseLayout">基础导航栏</router-link>
     </h3>
+    <!--    <h3 onclick="abilityBool = !abilityBool">能力树-->
+    <!--      <abilityTree v-if="abilityBool" @abilityEmit="getCheckedAbilities"></abilityTree>-->
+    <!--    </h3>-->
   </div>
 </template>
-
 <script>
+  // import abilityTree from '../views/tree/abilityTree'
 export default {
+    components() {
+      // abilityTree
+    },
   data() {
     return {
-      msg: '目录导航页'
+      msg: '目录导航页',
+      abilityBool: false
+    }
+  },
+  methods: {
+    getCheckedAbilities(data) {
+      this.checkedList = data;
+      console.log('jeishou', this.checkedList)
     }
   }
 }
