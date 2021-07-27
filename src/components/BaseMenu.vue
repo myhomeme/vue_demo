@@ -22,11 +22,11 @@
   </div>
 </template>
 <script>
-  // import abilityTree from '../views/tree/abilityTree'
+// import abilityTree from '../views/tree/abilityTree'
 export default {
-    components() {
-      // abilityTree
-    },
+  components() {
+    // abilityTree
+  },
   data() {
     return {
       msg: '目录导航页',
